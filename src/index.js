@@ -10,7 +10,7 @@ class Game extends React.Component {
       history: [{
         squares: Array(9).fill(null),
       }],
-      stepNumber: 0;
+      stepNumber: 0,
       xIsNext: true,
     };
   }
@@ -27,7 +27,7 @@ class Game extends React.Component {
       history: history.concat([{ //prefered concat as they do not mutate the original array, unlike push
         squares: squares,
       }]),
-      stepNumber: history.length;
+      stepNumber: history.length,
       xIsNext: !this.state.xIsNext,
     });
   }
